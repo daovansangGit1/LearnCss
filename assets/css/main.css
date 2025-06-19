@@ -133,3 +133,125 @@
     width: auto;
     object-fit: contain;
 }
+
+/* header notification  */
+.navbar__notify {
+    position: absolute;
+    right: 0;
+    top: calc(100% + 4px);
+    background-color: var(--white-color);
+    width: 404px;
+    border: 1px solid #D3D3D3;
+    border-radius: 3px;
+    box-shadow: -3px 3px 8px rgba(0, 0, 0, 0.15);
+    cursor: default;
+    transform-origin: top right; /* Đặt gốc tại góc trên bên phải (vị trí gần icon "Sao chép") */
+    animation: Growth ease-in 0.3s;
+    will-change: opacity, transform;
+    z-index: 1;
+    display: none;
+}
+
+/* show notify  */
+.navbar__item--show-notify:hover .navbar__notify {
+    display: block;
+}
+
+.navbar__notify::after {
+    content: '';
+    position: absolute;
+    top: -25px;
+    right: 8px;
+    border-width: 16px 18px;
+    border-style: solid;
+    border-color: transparent transparent var(--white-color) transparent;
+}
+
+.navbar__notify::before {
+    content: '';
+    display: block;
+    width: 60%;
+    height: 8px;
+    position: absolute;
+    top: -6px;
+    right: 0;
+}
+
+.navbar__notify-header {
+    height: 40px;
+    background-color: var(--white-color);
+    text-align: center;
+}
+
+.navbar__notify-header h3{
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: #999;
+    line-height: 40px;
+    margin: 0 0 0 12px;
+}
+
+.navbar__notify-list {
+    padding-left: 0;
+    max-height: 250px; /* Giới hạn chiều cao cho 5 li (tùy chỉnh dựa trên kích thước li) */
+    overflow-y: auto; /* Cho phép cuộn dọc */
+}
+
+.navbar__notify-item {
+    display: flex;
+}
+
+.navbar__notify-item:hover {
+    background-color: #f8f8f8;
+}
+
+/* bg cho thông báo chưa đọc  */
+.navbar__notify-item--notview {
+     background-color: rgba(238, 75, 43, 0.06);
+}
+
+.navbar__notify-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    padding: 12px;
+}
+
+.navbar__notify-img {
+    width: 48px;
+    object-fit: contain;
+}
+
+.navbar__notify-info {
+    margin-left: 12px;
+}
+
+.navbar__notify-name {
+    display: block;
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: #333;
+    line-height: 1.8rem;
+}
+
+.navbar__notify-desc {
+    display: block;
+    font-size: 1.2rem;
+    color: #777676;
+    line-height: 1.6rem;
+    margin-top: 4px;
+}
+
+.navbar__notity-footer {
+    display: flex;
+}
+
+.navbar__notity-footer-btn {
+    font-size: 1.4rem;
+    text-decoration: none;
+    color: var(--text-color);
+    padding: 12px 32px;
+    margin: auto;
+    font-weight: 500;
+}
+
