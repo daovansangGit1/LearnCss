@@ -324,4 +324,67 @@
 
 .auth-form__controls {
     margin-top: 50px;
+    display: flex;
+    justify-content: flex-end;
 }
+
+.auth-form__socials {
+    margin-top: 20px;
+    background: #f1f1f1;
+    padding: 10px 28px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn--with-icon {
+    padding: 0px 8px;
+}
+
+.btn--icon-fb {
+    background: #1805c2;
+    color: var(--white-color);
+}
+
+.btn--icon-gg {
+    background: var(--white-color);
+    color: var(--text-color);
+}
+
+.auth-form__help {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.auth-form__help-link {
+    text-decoration: none;
+    font-size: 1.4rem;
+    margin: 0;
+    position: relative;
+    font-weight: 400;
+    color: var(--text-color);
+}
+
+.auth-form__help-link:hover {
+    opacity: 0.7;
+}
+
+.auth-form__help .auth-form__help-link:nth-child(1) {
+    margin-right: 20px;
+}
+
+.auth-form__help--separate::after {
+    content: "";
+    display: block;
+    width: 1px;
+    height: 14px;
+    background-color: #646363;
+    position: absolute;
+    right: -12px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.auth-form__help-link.auth-form__help-link--red {
+    color: var(--primary-color);
+}
+
