@@ -33,9 +33,11 @@
                                     </a>
                                     <a href="#" class="navbar__qr-link">
                                         <img src="assets/img/ggplay.png" alt="ggplay" class="navbar__qr-download-img">
+                                    </a>
                                 </div>
                             </div>
                         </li>
+
                         <li class="navbar__item">
                             <span class="navbar__title--no-pointer">Kết nối</span>
                             <a href="#" class="navbar__icon-link">
@@ -189,7 +191,7 @@
                                 </ul>
                             </div>
                         </div>
-                        
+
                         <div class="header__search-select">
                             <span class="header__search-select-label">
                                 Trong shop
@@ -214,7 +216,15 @@
                     </div>
 
                     <div class="header__cart">
-                        <i class="header__cart-icon fa-solid fa-cart-plus"></i>
+                        <div class="header__cart-wrap">
+                            <i class="header__cart-icon fa-solid fa-cart-plus"></i>
+                            <span class="header__cart-notice">3</span>
+                            <!-- khi giỏ hàng trống thì thêm class:  header__cart-list--no-cart -->
+                            <div class="header__cart-list">
+                                <img src="assets/img/no_cart.png" alt="#" class="header__cart-no-cart-img">
+                                <span class="header__cart-list--no-cart-msg">Chưa có sản phẩm</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
