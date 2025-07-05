@@ -418,7 +418,7 @@
  /* giỏ hàng  */
 .header__cart {
     width: 150px;
-    text-align: center;
+    /* text-align: center; */
 }
 
 .header__cart-wrap {
@@ -437,7 +437,7 @@
 .header__cart-list {
     position: absolute;
     top: calc(100% + 8px);
-    width: 280px;
+    width: 338px;
     right: 0;
     background-color: var(--white-color);
     border-radius: 3px;
@@ -513,12 +513,104 @@
     border: 2px solid var(--primary-color);
 }
 
+.header__cart-heading {
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: var(--text-color);
+    margin-left: 12px;
+}
+
+.header__cart-list-item {
+    padding-left: 0;
+    list-style: none;
+    max-height: 150px; /* Giới hạn chiều cao cho 5 li (tùy chỉnh dựa trên kích thước li) */
+    overflow-y: auto; /* Cho phép cuộn dọc */
+}
+
+.header__cart-item {
+    display: flex;
+    align-items: center;
+}
+
+.header__cart-item-img {
+    width: 42px;
+    height: 42px;
+    margin: 12px;
+}
+
+.header__cart-item-info {
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: var(--text-color);
+}
+
+.header__cart-item-head {
+    display: flex;
+    align-items: center;
+    margin-bottom: 6px;
+}
+
+.header__cart-item-name {
+    margin: 0;
+    flex: 1;
+}
+
+.header__cart-item-wrap-head {
+    display: flex;
+    margin: 0px 12px 0px 0px;
+}
+
+.header__cart-item-price {
+    font-size: 1.2rem;
+    color: var(--primary-color);
+}
+
+.header__cart-item-multiply {
+    font-size: 1.2rem;
+    margin: 0px 4px;
+}
+
+.header__cart-item-qnt {
+    font-size: 1rem;
+    margin-top: 2px;
+}
+
+.header__cart-item-body {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__cart-item-desc {
+    font-size: 1.2rem;
+    color: #9b9a9a;
+}
+
+.header__cart-item-remove {
+    margin-right: 12px;
+    font-size: 1.2rem;
+}
+
+.header__cart-list-wrap-btn {
+    display: flex;
+    justify-content: flex-end;
+    margin: 8px 12px 12px 0px;
+}
+
+.header__cart-list-btn {
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+
+.header__cart-list-btn:hover {
+    opacity: .9;
+}
+
 
 /* thanh tìm kiếm  */
 .header__search-input-wrap {
     flex: 1;
     height: 100%;
-    position: relative;
 }
 
 .header__search-input {
