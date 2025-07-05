@@ -611,6 +611,8 @@
 .header__search-input-wrap {
     flex: 1;
     height: 100%;
+    position: relative;
+    
 }
 
 .header__search-input {
