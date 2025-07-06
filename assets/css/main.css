@@ -870,6 +870,10 @@
     background-color: #F5F5F5;
 }
 
+.app__content {
+    padding-top: 36px;
+}
+
 .category {
     padding-left: 8px;
     background-color: var(--white-color);
@@ -883,6 +887,7 @@
     font-size: 1.6rem;
     font-weight: 600;
     padding: 12px 14px;
+    margin-top: 0;
     border-bottom: 1px solid #f1f1f1;
 }
 
@@ -898,10 +903,6 @@
     margin-top: 0;
     margin-bottom: 0;
 } 
-
-.category-item {
-    
-}
 
 .category-item--active .category-item__link {
     color: var(--primary-color);
@@ -933,3 +934,5 @@
     right: -4px;
     color: var(--primary-color);
 }
+
+/* Home arrange fillter  */
