@@ -936,3 +936,76 @@
 }
 
 /* Home arrange fillter  */
+.home-filter {
+    background-color: rgba(0, 0, 0, 0.04);
+    display: flex;
+    padding: 12px 20px;
+    align-items: center;
+    border-radius: 3px;
+    margin-right: 16px;
+}
+
+.home-filter__label {
+    color: #555555;
+    font-size: 1.4rem;
+    margin-right: 16px;
+}
+
+.home-filter__btn {
+    min-width: 90px;
+    margin-right: 12px;
+}
+
+.home-filter__paginate {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+.home-filter__paginate-num {
+    font-size: 1.4rem;
+    color: var(--text-color);
+    margin-right: 22px;
+}
+
+.home-filter__paginate-current {
+    color: var(--primary-color);
+}
+
+.home-filter__paginate-control {
+    border-radius: 3px;
+    overflow: hidden;
+    display: flex;
+    width: 72px;
+    height: 36px;
+    box-shadow: -2px 2px 4px rgba(0, 0, 0, 0.15);
+}
+
+.home-filter__paginate-btn {
+    flex: 1;
+    background-color: var(--white-color);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.home-filter__paginate-btn:first-child {
+    border-right: 1px solid #e4e4e4;
+}
+
+.home-filter__paginate-icon {
+    font-size: 1.4rem;
+    color: #555;
+}
+
+.home-filter__paginate-btn--disable {
+    background-color: #f9f9f9;
+    cursor: default;
+}
+
+.home-filter__paginate-btn--disable .home-filter__paginate-icon {
+    color: #ccc;
+}
+
+
