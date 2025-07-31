@@ -4,6 +4,7 @@
     --text-color: #333;
     --primary-color: #EE4D2D;
     --border-color: #dbdbdb;
+    --star-gold-color: #FFCE3E;
 
     --header-height: 120px;
     --navbar-height: 48px;
@@ -58,6 +59,7 @@ html {
     width: 16.6667%;
 }
 
+/* một 2 cột cho 1 sản phẩm bên trong của 10 phần  */
 .grid__column-2-4 {
     padding-left: 5px;
     padding-right: 5px;
