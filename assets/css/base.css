@@ -195,6 +195,43 @@ html {
     color: rgb(131, 131, 131);
 }
 
+/* Phân trang ở cuối trang  */
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+
+.pagination-item {
+    margin: 0px 12px;
+}
+
+.pagination-item--active .pagination-item__link{
+    background-color: var(--primary-color);
+    color: var(--white-color);
+}
+
+.pagination-item--active .pagination-item__link:hover {
+    background-color: var(--primary-color);
+}
+
+.pagination-item__link {
+    --height: 30px;
+    display: block;
+    text-decoration: none;
+    font-size: 1.6rem;
+    color: #939393;
+    min-width: 40px;
+    height: var(--height);
+    line-height: var(--height);
+    border-radius: 2px;
+    text-align: center;
+}
+
+.pagination-item__icon {
+
+}
 
 /* animation  */
 @keyframes fadeIn {

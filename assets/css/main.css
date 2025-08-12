@@ -1236,3 +1236,8 @@ i.home-product-item__like-icon-fill {
     font-size: 1.2rem;
     /* line-height: 1.3rem; */
 }
+
+/* phân trang ở dưới giao diện  */
+.home-product__pagination {
+    margin: 50px 0 32px 0;
+}
